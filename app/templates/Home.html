@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Home</title>
+    <style>
+        body {
+            background-image: url('/app/images/QNU.jpg');
+            background-size: cover; /* Đảm bảo hình nền phủ toàn bộ phần nội dung */
+            background-position: center; /* Căn chỉnh hình nền vào giữa */
+            color: #333; /* Màu chữ */
+            font-family: Arial, sans-serif; /* Font chữ */
+        }
+
+        h1 {
+            text-align: center; /* Căn chỉnh tiêu đề vào giữa */
+        }
+
+        /* Style for links */
+        a {
+            display: block; /* Hiển thị link trên mỗi dòng */
+            width: 200px; /* Độ rộng của link */
+            margin: 10px auto; /* Canh chỉnh link vào giữa */
+            padding: 8px 16px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #007bff;
+            border-radius: 4px;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Home Page</h1>
+    <a href="{{ url_for('register') }}">Đăng ký</a>
+    <a href="{{ url_for('login') }}">Đăng nhập</a>
+</body>
+</html>
